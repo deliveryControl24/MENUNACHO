@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar y Restaurante Donde Nacho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          
+        </div>
+        <h1>Bar y Restaurante Donde Nacho</h1>
+        <p>Selecciona lo que deseas pedir</p>
+    </header>
+    <main>
+        <form id="pedidoForm">
+            <!-- ASADOS -->
+            <section>
+                <h2>Asados</h2>
+                <label><input type="checkbox" name="asados" value="Costilla de cerdo C$300"> Costilla de cerdo .......... C$300</label><br>
+                <label><input type="checkbox" name="asados" value="Pollo asado C$220"> Pollo asado .......... C$220</label><br>
+                <label><input type="checkbox" name="asados" value="Cerdo asado C$220"> Cerdo asado .......... C$220</label><br>
+                <label><input type="checkbox" name="asados" value="Corazón asado C$220"> Corazón asado .......... C$220</label><br>
+                <label><input type="checkbox" name="asados" value="Conces asados C$450"> Conces asados .......... C$450</label><br>
+                <label><input type="checkbox" name="asados" value="Lomo de costilla (asado) C$470"> Lomo de costilla (asado) .......... C$470</label>
+            </section>
+            
+            <!-- MARISCO -->
+            <section>
+                <h2>Marisco</h2>
+                <label><input type="checkbox" name="marisco" value="Camarones a la plancha C$370"> Camarones a la plancha .......... C$370</label><br>
+                <label><input type="checkbox" name="marisco" value="Camarones empanizados C$370"> Camarones empanizados .......... C$370</label><br>
+                <label><input type="checkbox" name="marisco" value="Camarones al ajo C$370"> Camarones al ajo .......... C$370</label><br>
+                <label><input type="checkbox" name="marisco" value="Curvina a la plancha C$370"> Curvina a la plancha .......... C$370</label>
+            </section>
+            
+            <!-- POLLO -->
+            <section>
+                <h2>Pollo</h2>
+                <label><input type="checkbox" name="pollo" value="Pollo a la plancha C$350"> Pollo a la plancha .......... C$350</label><br>
+                <label><input type="checkbox" name="pollo" value="Pollo al vino C$350"> Pollo al vino .......... C$350</label><br>
+                <label><input type="checkbox" name="pollo" value="Pollo jalapeño C$350"> Pollo jalapeño .......... C$350</label><br>
+                <label><input type="checkbox" name="pollo" value="Pollo a la plancha (T/Boca) C$400"> Pollo a la plancha (T/Boca) .......... C$400</label>
+            </section>
+            
+            <!-- BEBIDAS -->
+            <section>
+                <h2>Bebidas</h2>
+                <label><input type="checkbox" name="bebidas" value="Limonada C$40"> Limonada .......... C$40.00</label><br>
+                <label><input type="checkbox" name="bebidas" value="Gaseosa C$30"> Gaseosa .......... C$30.00</label><br>
+                <label><input type="checkbox" name="bebidas" value="Té de limón C$40"> Té de limón .......... C$40.00</label><br>
+                <label><input type="checkbox" name="bebidas" value="Jugo de naranja C$40"> Jugo de naranja .......... C$40.00</label><br>
+                <label><input type="checkbox" name="bebidas" value="Agua embotellada C$40"> Agua embotellada .......... C$40.00</label>
+            </section>
+            
+            <!-- EXTRAS -->
+            <section>
+                <h2>Extras</h2>
+                <label><input type="checkbox" name="extras" value="Extra de arroz o gallo pinto C$20"> Extra de arroz o gallo pinto .......... C$20.00</label><br>
+                <label><input type="checkbox" name="extras" value="Extra de papas C$40"> Extra de papas .......... C$40.00</label><br>
+                <label><input type="checkbox" name="extras" value="Extra de ensalada C$40"> Extra de ensalada .......... C$40.00</label><br>
+                <label><input type="checkbox" name="extras" value="Extra de tostones C$40"> Extra de tostones .......... C$40.00</label><br>
+                <label><input type="checkbox" name="extras" value="Extra de chimichurri C$40"> Extra de chimichurri .......... C$40.00</label><br>
+                <label><input type="checkbox" name="extras" value="Extra de jalapeño C$40"> Extra de jalapeño .......... C$40.00</label><br>
+                <label><input type="checkbox" name="extras" value="Extra de queso C$50"> Extra de queso .......... C$50.00</label>
+            </section>
+            
+            <!-- LICORES -->
+            <section>
+                <h2>Cervezas y Licores</h2>
+                <label for="licores">Selecciona una opción:</label><br>
+                <select id="licores" name="licores">
+                    <option value="Toña">Toña</option>
+                    <option value="Victoria Clásica">Victoria Clásica</option>
+                    <option value="Ron Flor de Caña 1/2 Botella">Ron Flor de Caña (1/2 Botella)</option>
+                    <option value="Tequila Jose Cuervo Especial">Tequila Jose Cuervo Especial</option>
+                    <option value="Whisky Johnnie Walker Black">Whisky Johnnie Walker Black</option>
+                </select>
+            </section>
+            
+            <button type="button" id="enviarPedido">Enviar Pedido por WhatsApp</button><br>
+            <button type="button" id="facebookButton" onclick="window.open('https://www.facebook.com/profile.php?id=61566037844859&mibextid=ZbWKwL', '_blank')">Visita nuestra página de Facebook</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bar y Restaurante Donde Nacho. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
